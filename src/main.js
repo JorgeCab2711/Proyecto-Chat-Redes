@@ -104,7 +104,7 @@ function mainMenu() {
     console.log('\nElige una opción:');
     console.log('1. Registrarse en la plataforma');
     console.log('2. Iniciar sesión en su cuenta');
-    console.log('3. Salir de la aplicación');
+    console.log('3. Salir');
     rl.question('>', choice => {
         switch (choice) {
             case '1':
