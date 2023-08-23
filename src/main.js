@@ -550,7 +550,7 @@ async function getContactDetails() {
 
     await xmpp.send(iq);
 
-    // Espera un poco para que lleguen los mensajes de presencia
+    
     await new Promise(resolve => setTimeout(resolve, 5000));
 
     return Object.values(contacts);
