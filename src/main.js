@@ -197,7 +197,6 @@ async function deleteAccount() {
         return;
     }
 
-    // Manejador de errores específico para la eliminación de la cuenta
     const errorHandler = (err) => {
         if (err.condition === 'not-authorized') {
             console.log('Cuenta eliminada con éxito.');
@@ -208,7 +207,6 @@ async function deleteAccount() {
         }
     };
 
-    // Agregamos el manejador de errores
     xmpp.on('error', errorHandler);
 
     const deleteStanza = xml(
